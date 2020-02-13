@@ -1,66 +1,43 @@
-# Site settings
-title: Wolfram
-description: Wolfram的QQ空间。
-cover: assets/images/cover.jpg
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
-baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://wolframcong.github.io" # the base hostname & protocol for your site
+title: Wolfram的QQ空间
+author: GitHub User
+email: wolframc@foxmail.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
+baseurl: 
 
-pagination:
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
 
-  # Site-wide kill switch, disabled here it doesn't run at all 
-  enabled: true
+permalink: /posts/:title/
+texture:
+  title: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+  style: black
+  showNav: false
+  showPicker: false
 
-  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: false
+  # generate social links in footer
+  social_links:
+    twitter: thelehhman
+    github:  WolframCong
+    linkedIn: in/thelehhman
+    rss: rss
+ 
 
-  per_page: 5
-
-# Social
-facebook: facebook
-twitter: twitter
-github:  github
-
-#Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
-
-
-permalink: /:title
-
-
-# Google Analytics
-analytics_id: ""
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
 # Build settings
-markdown: kramdown
-
-kramdown:
-  parse_block_html: true
+# theme: texture
 
 plugins:
-  - jekyll-paginate-v2
-
-
-# Settings for rake task
-safe: False
-lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
-branch: master #branch
-relative_source: ../hanuman/ #source directory
-destination: ../hanuman-pages/ #destination directory
-production_url:  https://samanyougarg.com/
-source_url:  https://github.com/samanyougarg/hanuman #source repository url
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
+  - jekyll-seo-tag
+#  - jekyll-feed
