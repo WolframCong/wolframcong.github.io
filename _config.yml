@@ -1,10 +1,10 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
-cover: assets/images/radhakrishna.jpg
+title: Wolfram
+description: Wolfram的QQ空间。
+cover: assets/images/cover.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
-baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
+baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
 url: "https://wolframcong.github.io" # the base hostname & protocol for your site
 
 pagination:
