@@ -15,11 +15,11 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
+  title: Wolfram的QQ空间
+  tagline: Wolfram's Qzone
   date_format: "%b %-d, %Y"
   style: black
-  showNav: false
+  showNav: True
   showPicker: false
 
   # generate social links in footer
@@ -32,6 +32,11 @@ texture:
 markdown: kramdown
 kramdown:
   input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  syntax_highlighter: rouge
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "Coding Post"
-description: An example post which shows code rendering.
+title:  "Hello jekyll! Hello Github-pages!"
+description: 国际惯例
 date:   1999-01-01 21:00:00 +0800
 categories: Javascript NodeJS
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+"Hello jekyll! Hello Github-pages!"
+
+搞了半天终于成功发布了，不过我对这个Jekyll还不是十分了解，markdown文件中一些语法特征在网页中显示并不完整。我会在这篇post中进行调试。
 
 ```javascript
 const express = require('express')
@@ -17,16 +19,104 @@ app.get('/', function (req, res) {
  
 app.listen(3000)
 ```
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam qui voluptatem excepturi nemo similique atque sapiente aperiam, dolorum deleniti! Esse quam perferendis temporibus nemo at molestias necessitatibus tenetur cupiditate sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil et voluptatibus non labore officiis assumenda, distinctio perspiciatis blanditiis nesciunt rerum molestias impedit fugiat nulla qui libero minima quasi! Libero, iure.
-
-```scss
-body {
-	font-family: 'Nunito Sans', sans-serif;
-	line-height: 1.5em;
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+```markdown
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
 ```
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum, ratione impedit necessitatibus facere soluta odio repellat asperiores neque! Sunt iusto quia suscipit amet inventore eum, vel molestiae reiciendis alias.
+
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+
+```markdown
+1. 有序列表项 一
+2. 有序列表项 二
+3. 有序列表项 三
+```
+
+1. 有序列表项 一
+2. 有序列表项 二
+3. 有序列表项 三
+
+```markdown
+*斜体*
+**粗体**
+***加粗斜体***
+~~删除线~~
+<u>下划线</u>
+`背景高亮`
+<kbd>ctrl</kbd> + <kbd>C</kbd>
+:smile:
+```
+
+*斜体*  
+**粗体**  
+***加粗斜体***  
+~~删除线~~  
+<u>下划线</u>  
+`背景高亮`  
+<kbd>Ctrl</kbd> + <kbd>C</kbd>  
+:smile:  
+```markdown
+* * *
+***
+*****
+- - -
+---
+```
+* * *
+***
+*****
+- - -
+---
+```markdown
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+```
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+
+```markdown
+行内$E=mc^2$公式
+<br/>
+行间$$E=mc^2$$公式
+```
+行内$E=mc^2$公式  
+<br/> 
+行间$$E=mc^2$$公式  
+
+```markdown
+>  这是引用
+
+>还
+>是
+>引
+>用
+```
+> 这是引用
+>>还是引用  
+这是
