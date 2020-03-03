@@ -49,3 +49,4 @@ kramdown:
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+google_analytics: UA-159568807-1
