@@ -128,4 +128,4 @@ Content Cell  | Content Cell
 > 这是引用
 >>还是引用  
 
-![test](postimage/test.jpg)
+![test](/image/test.jpg)
