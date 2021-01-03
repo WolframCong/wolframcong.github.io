@@ -1,4 +1,3 @@
-#!/bin/bash
 cd _posts
 python newpost.py
 cd ..
